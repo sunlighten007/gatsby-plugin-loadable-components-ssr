@@ -8,7 +8,7 @@ const loadableStatsName = "loadable-stats-build-javascript.json";
 
 const statsPath = path.join(process.cwd(), `/.cache/${loadableStatsName}`);
 
-export const onCreateWebpackConfig = ({ actions, stage }) => {
+exports.onCreateWebpackConfig = ({ actions, stage }) => {
   if (
     stage === "build-javascript" ||
     stage === "develop" ||
@@ -26,6 +26,6 @@ export const onCreateWebpackConfig = ({ actions, stage }) => {
   }
 }
 
-export const onCreateBabelConfig = ({ actions }) => {
+exports.onCreateBabelConfig = ({ actions }) => {
   actions.setBabelPlugin({ name: "@loadable/babel-plugin" })
 }
