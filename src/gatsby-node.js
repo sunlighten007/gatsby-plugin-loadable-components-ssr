@@ -1,12 +1,10 @@
-import { unlinkSync } from "fs"
-import path from "path"
 import LoadablePlugin from "@loadable/webpack-plugin"
 
 const isWin = process.platform === "win32";
 
 const loadableStatsName = "loadable-stats-build-javascript.json";
 
-const statsPath = path.join(process.cwd(), `/.cache/${loadableStatsName}`);
+const statsPath = `${process.cwd()}/.cache/${loadableStatsName}`;
 
 exports.onCreateWebpackConfig = ({ actions, stage }) => {
   if (
