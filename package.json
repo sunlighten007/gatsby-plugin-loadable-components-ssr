@@ -41,6 +41,9 @@
     "prepare": "cross-env NODE_ENV=production npm run build && husky install",
     "watch": "babel -w src --out-dir . --ignore **/__tests__"
   },
+  "engines": {
+    "node": "18.17.0"
+  },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
   }
