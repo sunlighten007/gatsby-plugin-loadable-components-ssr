@@ -2,10 +2,7 @@
   "name": "gatsby-plugin-loadable-components-ssr",
   "description": "Server-side rendering loadable components in your gatsby application",
   "version": "3.3.0",
-  "author": "Grayson Hicks <graysonhicks@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/graysonhicks/gatsby-plugin-loadable-components-ssr/issues"
-  },
+  "author": "Sunlighten",
   "dependencies": {
     "@babel/runtime": "^7.9.6",
     "@loadable/babel-plugin": "^5.13.2",
@@ -45,7 +42,7 @@
     "watch": "babel -w src --out-dir . --ignore **/__tests__"
   },
   "engines": {
-    "node": "18.16.1"
+    "node": ">=18.0.0 <19.0.0"
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
